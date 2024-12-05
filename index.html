@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap"
+        rel="stylesheet">
+    <title>Portfolio site</title>
+    <style>
+        .font__montagu {
+            font-family: "Montagu Slab", serif;
+        }
+
+        .font__manrope {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .card__bg {
+            background: linear-gradient(232.96deg, #0E0E10 27.06%, rgba(23, 23, 26, 0.23) 92.12%);
+        }
+
+        .text__underline {
+            border-bottom: 1px solid #2F2F37
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <!-- header start -->
+    <header class="container mx-auto">
+        <!-- nav start -->
+        <nav class="flex flex-row items-center justify-between px-[40px] py-[41px]">
+            <h2 class="font__manrope font-[800] text-[32px] text-white">LOGO</h2>
+            <ul class="hidden xl:flex flex-row items-center gap-[26px]">
+                <li class="capitalize font__manrope font-400 text-white">home</li>
+                <li class="capitalize font__manrope font-400 text-white">about me</li>
+                <li class="capitalize font__manrope font-400 text-white">projects</li>
+                <li class="capitalize font__manrope font-400 text-white">Testimonials</li>
+                <li class="capitalize font__manrope font-500 text-black">
+                    <button class="px-[42px] py-[20px] bg-[#E6AA32] rounded-full">Downlaod CV</button>
+                </li>
+            </ul>
+            <img src="./assets/menu.svg" alt="menu" class="xl:hidden w-[24px] h-[24px]">
+        </nav>
+        <!-- nav end -->
+        <!-- hero start -->
+        <section class="px-[16px]">
+            <div class="grid grid-cols-1 xl:grid-cols-2 items-center gap-[29px]">
+                <div class="order-2 xl:order-1 max-w-[541px]">
+                    <span class="font__manrope font-[400] text-[18px] text-[#797C86] capitalize">Web Developer</span>
+                    <h2 class="font__montagu font-[700] text-[36px] xl:text-[58px] text-white">
+                        HI! This
+                        is
+                        <span class="text-[#E6AA32]">Tanvir Ahmad</span>
+                    </h2>
+                    <p class="font__manrope font-[400] text-[16px] xl:text-[18px] text-[#797C86]">As a web designer with
+                        four years of
+                        experience, I specialize in creating visually appealing and user-friendly websites. My expertise
+                        includes responsive design, UI/UX principles, and collaborating with clients to bring their
+                        visions
+                        to life.</p>
+                    <div class="flex flex-col xl:flex-row items-start xl:items-center gap-[24px] mt-[40px]">
+                        <button
+                            class="font__manrope font-[500] text-[16px] px-[39px] py-[18px] rounded-full bg-[#E6AA32] text-black">Let’s
+                            Connect</button>
+                        <button
+                            class="flex flex-row items-center gap-[24px] font__manrope font-[400] text-[16px] py-[18px] text-[#E6E6E6]">View
+                            Portfolios
+                            <img src="./assets/arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="relative order-1 xl:order-2 min-w-[335px] min-h-[175px]">
+                    <img src="./assets/hero.svg" alt=""
+                        class="relative z-10 w-[251px] xl:w-[492px] h-[248px] xl:h-[488px] object-contain">
+                    <div
+                        class="absolute bottom-0 w-[353px] xl:w-[692px]  h-[175px] xl:h-[343px]  card__bg rounded-l-full">
+                    </div>
+                </div>
+        </section>
+        <!-- hero end -->
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main class="px-[16px] container mx-auto">
+        <!-- section 1 start -->
+        <section class="pt-[62px] xl:pt-[160px]">
+            <div class="w-full xl:w-[743px] mx-auto flex flex-col justify-center items-center">
+                <h4 class="font__manrope font-[600] text-[16px] xl:text-[20px] text-[#797C86] uppercase text-center">
+                    Specialties</h4>
+                <h2 class="font__manrope font-[700] text-[24px] xl:text-[48px] text-white uppercase text-center">My
+                    specialities</h2>
+                <p class="font__manrope font-[400] text-[16px] xl:text-[18px] text-[#797C86] text-center">As a web
+                    designer with four
+                    years of
+                    experience, I specialize in creating visually appealing and user-friendly websites. My expertise
+                    includes responsive design.</p>
+            </div>
+            <div class="grid grid-cols-2 xl:grid-cols-4 gap-[20px] mt-[40px] xl:mt-[68px]">
+                <div class="flex flex-col justify-center items-center px-[24px] py-[48px] card__bg">
+                    <img src="./assets/front-end.svg" alt="" class="w-[64px] h-[64px] object-contain">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">Front-End
+                        Development
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-[24px] py-[48px] card__bg">
+                    <img src="./assets/backend.svg" alt="" class="w-[64px] h-[64px] object-contain">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">Back-End
+                        Development
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-[24px] py-[48px] card__bg">
+                    <img src="./assets/full-stack.svg" alt="" class="w-[64px] h-[64px] object-contain">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        Full-Stack Development
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-[24px] py-[48px] card__bg">
+                    <img src="./assets/was.svg" alt="" class="w-[64px] h-[64px] object-contain">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        Web Application Security
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-[24px] py-[48px] card__bg">
+                    <img src="./assets/ecom.svg" alt="" class="w-[64px] h-[64px] object-contain">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        E-commerce Development
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-[24px] py-[48px] card__bg">
+                    <img src="./assets/cloud.svg" alt="" class="w-[64px] h-[64px] object-contain">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        Cloud-Based Development
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-[24px] py-[48px] card__bg">
+                    <img src="./assets/pwa.svg" alt="" class="w-[64px] h-[64px] object-contain">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        Progressive Web Apps
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-[24px] py-[48px] card__bg">
+                    <img src="./assets/ai.svg" alt="" class="w-[64px] h-[64px] object-contain">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        AI-Powered Development
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+            </div>
+        </section>
+        <!-- section 1 end -->
+        <!-- section 2 start -->
+        <section class="pt-[62px] xl:pt-[160px]">
+            <div class="w-full xl:w-[743px] mx-auto flex flex-col justify-center items-center">
+                <h4 class="font__manrope font-[600] text-[16px] xl:text-[20px] text-[#797C86] uppercase text-center">
+                    recent works</h4>
+                <h2 class="font__manrope font-[700] text-[24px] xl:text-[48px] text-white uppercase text-center">My
+                    Recent works</h2>
+                <p class="font__manrope font-[400] text-[16px] xl:text-[18px] text-[#797C86] text-center">As a web
+                    designer with four
+                    years of
+                    experience, I specialize in creating visually appealing and user-friendly websites. My expertise
+                    includes responsive design.</p>
+            </div>
+            <div
+                class="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[32px] justify-center items-center mx-auto mt-[40px] xl:mt-[68px]">
+                <a href="https://assignment-1-three-umber.vercel.app/" class="rounded-lg">
+                    <img src="https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="w-full h-full object-cover">
+                </a>
+                <a href="https://assignment-1-three-umber.vercel.app/" class="rounded-lg">
+                    <img src="https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="w-full h-full object-cover">
+                </a>
+                <a href="https://assignment-1-three-umber.vercel.app/" class="rounded-lg">
+                    <img src="https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="w-full h-full object-cover">
+                </a>
+                <a href="https://assignment-1-three-umber.vercel.app/" class="rounded-lg">
+                    <img src="https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="w-full h-full object-cover">
+                </a>
+                <a href="https://assignment-1-three-umber.vercel.app/" class="rounded-lg">
+                    <img src="https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="w-full h-full object-cover">
+                </a>
+                <a href="https://assignment-1-three-umber.vercel.app/" class="rounded-lg">
+                    <img src="https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="w-full h-full object-cover">
+                </a>
+            </div>
+        </section>
+        <!-- section 2 end -->
+        <!-- section 3 start -->
+        <section class="pt-[62px] xl:pt-[160px]">
+            <div class="w-full xl:w-[743px] mx-auto flex flex-col justify-center items-center">
+                <h4 class="font__manrope font-[600] text-[16px] xl:text-[20px] text-[#797C86] uppercase text-center">
+                    Services</h4>
+                <h2 class="font__manrope font-[700] text-[24px] xl:text-[48px] text-white uppercase text-center">My
+                    other services</h2>
+                <p class="font__manrope font-[400] text-[16px] xl:text-[18px] text-[#797C86] text-center">As a web
+                    designer with four
+                    years of
+                    experience, I specialize in creating visually appealing and user-friendly websites. My expertise
+                    includes responsive design.</p>
+            </div>
+            <div class="grid grid-cols-2 xl:grid-cols-4 gap-[20px] mt-[40px] xl:mt-[68px]">
+                <div
+                    class="flex flex-col justify-center items-center gap-[16px] px-[24px] py-[48px] card__bg rounded-lg">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        Website Development
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center gap-[16px] px-[24px] py-[48px] card__bg rounded-lg">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        E-Commerce Development
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center gap-[16px] px-[24px] py-[48px] card__bg rounded-lg">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        Web App Development
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center gap-[16px] px-[24px] py-[48px] card__bg rounded-lg">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        API Dev. & Integration
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center gap-[16px] px-[24px] py-[48px] card__bg rounded-lg">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        Cloud-Based Solutions
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center gap-[16px] px-[24px] py-[48px] card__bg rounded-lg">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        Web Perform. Optimization
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center gap-[16px] px-[24px] py-[48px] card__bg rounded-lg">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        (SEO) Services
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center gap-[16px] px-[24px] py-[48px] card__bg rounded-lg">
+                    <h2 class="font__manrope font-[700] text-[16px] xl:text-[18px] text-center text-[#E6E6E6]">
+                        Website Maint. & Support
+                    </h2>
+                    <p class="font__manrope font-[400] text-[14px] text-center text-[#E6E6E6] opacity-50">Amet minim
+                        mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                        mollit.</p>
+                </div>
+            </div>
+        </section>
+        <!-- section 3 end -->
+        <!-- section 4 start -->
+        <section class="pt-[62px] xl:pt-[160px] pb-[111px]">
+            <div class="mb-[50px]">
+                <p class="font__manrope font-[600] text-[20px] text-[#797C86]">FAQ’s</p>
+                <p class="font__manrope font-[600] tet-[24px] xl:text-[48px] text-white uppercase">Frequently Asked
+                    Questions</p>
+            </div>
+            <!-- horizontal line start -->
+            <div class="px-[50px] py-[42px] border-t border-[#2F2F37] flex justify-between items-start xl:items-center">
+                <div class="w-[168px] md:w-full flex flex-col gap-[30px]">
+                    <h4 class="font__manrope font-[600] text-[16px] xl:text-[20px] uppercase text-[#AFB0B6]">What areas
+                        of web
+                        development
+                        do you focus on?</h4>
+                    <p class="font__manrope font-[400] text-[18px] uppercase text-[#797C86]">I specialize in web
+                        development, creating websites that deliver unique user experiences.</p>
+                </div>
+                <div
+                    class="w-[52px] h-[52px] bg-black border border-[#2F2F37] rounded-full flex justify-center items-center">
+                    <img src="./assets/uparrow.svg" alt="" class="">
+                </div>
+            </div>
+            <div class="px-[50px] py-[42px] border-t border-[#2F2F37] flex justify-between items-center">
+                <div class="w-[168px] md:w-full flex flex-col gap-[30px]">
+                    <h4 class="font__manrope font-[600] text-[16px] xl:text-[20px] uppercase text-[#AFB0B6]">How can I
+                        schedule a web
+                        development consultation with you?</h4>
+                </div>
+                <div
+                    class="w-[52px] h-[52px] bg-black border border-[#2F2F37] rounded-full flex justify-center items-center">
+                    <img src="./assets/uparrow.svg" alt="" class="rotate-180">
+                </div>
+            </div>
+            <div class="px-[50px] py-[42px] border-t border-[#2F2F37] flex justify-between items-center">
+                <div class="w-[168px] md:w-full flex flex-col gap-[30px]">
+                    <h4 class="font__manrope font-[600] text-[16px] xl:text-[20px] uppercase text-[#AFB0B6]">Can I
+                        choose a specific
+                        platform for my website?</h4>
+                </div>
+                <div
+                    class="w-[52px] h-[52px] bg-black border border-[#2F2F37] rounded-full flex justify-center items-center">
+                    <img src="./assets/uparrow.svg" alt="" class="rotate-180">
+                </div>
+            </div>
+            <div class="px-[50px] py-[42px] border-t border-[#2F2F37] flex justify-between items-center">
+                <div class="w-[168px] md:w-full flex flex-col gap-[30px]">
+                    <h4 class="font__manrope font-[600] text-[16px] xl:text-[20px] uppercase text-[#AFB0B6]">What tools
+                        and
+                        technologies do you use for web development?</h4>
+                </div>
+                <div
+                    class="w-[52px] h-[52px] bg-black border border-[#2F2F37] rounded-full flex justify-center items-center">
+                    <img src="./assets/uparrow.svg" alt="" class="rotate-180">
+                </div>
+            </div>
+            <div class="px-[50px] py-[42px] border-t border-[#2F2F37] flex justify-between items-center gap-[40px]">
+                <div class="w-[168px] md:w-full flex flex-col gap-[30px]">
+                    <h4 class="font__manrope font-[600] text-[16px] xl:text-[20px] uppercase text-[#AFB0B6]">Can I
+                        choose a specific
+                        platform for my website?</h4>
+                </div>
+                <div
+                    class="w-[52px] h-[52px] p-[14px] bg-black border border-[#2F2F37] rounded-full flex justify-center items-center">
+                    <img src="./assets/uparrow.svg" alt="" class="rotate-180">
+                </div>
+            </div>
+            <!-- horizontal line end -->
+        </section>
+        <!-- section 4 end -->
+    </main>
+    <!-- main end -->
+    <!-- horizontal line start -->
+    <div class="text__underline"></div>
+    <!-- horizontal line end -->
+    <!-- footer start -->
+    <footer class="">
+        <div class="container mx-auto px-[16px] flex flex-col justify-center">
+            <section
+                class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 justify-around gap-[80px] px-[80px] py-[100px]">
+                <div class='flex flex-col gap-[20px]'>
+                    <span class="font__manrope font-[600] text-[18px] uppercase text-[#797C86]">Solutions</span>
+                    <ul class="flex flex-col gap-[6px]">
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Glintopia</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Fluxway</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Fable’s</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">PowerCore</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='flex flex-col gap-[20px]'>
+                    <span class="font__manrope font-[600] text-[18px] uppercase text-[#797C86]">Customers</span>
+                    <ul class="flex flex-col gap-[6px]">
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Glintopia</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Fluxway</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Fable’s</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">PowerCore</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='flex flex-col gap-[20px]'>
+                    <span class="font__manrope font-[600] text-[18px] uppercase text-[#797C86]">Partners</span>
+                    <ul class="flex flex-col gap-[6px]">
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Glintopia</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Fluxway</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Fable’s</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">PowerCore</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='flex flex-col gap-[20px]'>
+                    <span class="font__manrope font-[600] text-[18px] uppercase text-[#797C86]">Stakeholders</span>
+                    <ul class="flex flex-col gap-[6px]">
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Glintopia</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Fluxway</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Fable’s</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">PowerCore</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class='flex flex-col gap-[20px]'>
+                    <span class="font__manrope font-[600] text-[18px] uppercase text-[#797C86]">Offerings</span>
+                    <ul class="flex flex-col gap-[6px]">
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Visions</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">Gatherings</span>
+                        </li>
+                        <li class="text-[#F2F2F3] uppercase ">
+                            <span class="text__underline">BizSphere</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- horizontal line start -->
+        <div class="text__underline"></div>
+        <!-- horizontal line end -->
+        <div class="container px-[16px] xl:mx-auto flex flex-col xl:flex-row justify-between xl:items-center py-[40px]">
+            <div class="flex flex-row items-center gap-[11px]">
+                <span class="font__manrope font-[400] text-[18px] text-[#797C86]">Terms & Conditions</span>
+                <img src="./assets/line.svg" alt="" class="text-[#797C86]">
+                <span class="font__manrope font-[400] text-[18px] text-[#797C86]">Privacy Policy</span>
+            </div>
+            <div>
+                <span class="font__manrope font-[400] text-[18px] text-[#797C86]">© 2024 All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
